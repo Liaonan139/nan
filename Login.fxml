@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- 创建一个锚点面板，设置其高度和宽度 -->
+<AnchorPane fx:id="anchorPane" prefHeight="748.0" prefWidth="635.0" style="-fx-background-color: wite;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cx.Login">
+   <!-- 添加子节点 -->
+   <children>
+      <!-- 添加一个图片视图，显示云音乐图标 -->
+      <ImageView fitHeight="111.0" fitWidth="128.0" layoutX="272.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!-- 设置图片的URL -->
+            <Image url="@image/cloudmusic.png" />
+         </image>
+      </ImageView>
+      <!-- 添加一个文本输入框，用于输入手机号 -->
+      <TextField layoutX="261.0" layoutY="263.0" prefHeight="45.0" prefWidth="231.0" promptText="请输入手机号" style="-fx-border-color: D9D7D7FF;" />
+      <!-- 添加一个文本输入框，用于输入密码 -->
+      <TextField layoutX="163.0" layoutY="308.0" prefHeight="45.0" prefWidth="330.0" promptText="请输入密码" style="-fx-border-color: D9D7D7FF;" />
+      <!-- 添加一个图片视图，显示登录按钮图标 -->
+      <ImageView fitHeight="111.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+<!--         <image>-->
+<!--            &lt;!&ndash; 设置图片的URL &ndash;&gt;-->
+<!--            <Image url="@image/img_1.png" />-->
+<!--         </image>-->
+      </ImageView>
+      <!-- 添加一个标签，显示忘记密码的提示信息 -->
+      <Label layoutX="315.0" layoutY="362.0" text="忘记密码" textFill="#5781d3" />
+      <!-- 添加一个标签，显示验证码登录的提示信息 -->
+      <Label layoutX="417.0" layoutY="362.0" text="验证码登录" textFill="#4e77f2" />
+      <!-- 添加一个复选框，用于选择是否自动登录 -->
+      <CheckBox layoutX="163.0" layoutY="362.0" mnemonicParsing="false" selected="true" text="自动登录">
+         <cursor>
+            <!-- 设置光标样式 -->
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <!-- 设置颜色调整效果 -->
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="0.31" hue="-1.0" saturation="0.05" />
+         </effect></CheckBox>
+      <!-- 添加一个按钮，用于触发登录操作 -->
+      <Button layoutX="195.0" layoutY="461.0" mnemonicParsing="false" onAction="#Login" prefHeight="45.0" prefWidth="266.0" style="-fx-background-color: red;" text="登录" textFill="WHITE" />
+      <!-- 添加一个标签，显示注册的链接 -->
+      <Label layoutX="321.0" layoutY="540.0" text="注册" textFill="#6a6cfc" underline="true" />
+      <!-- 添加一个组合框，用于选择国家代码 -->
+      <ComboBox layoutX="163.0" layoutY="263.0" prefHeight="45.0" prefWidth="100.0" promptText="+86" style="-fx-background-color: wite; -fx-border-color: D9D7D7FF;" />
+      <!-- 添加一个图片视图，显示底部登录界面的背景图 -->
+      <ImageView fitHeight="78.0" fitWidth="359.0" layoutX="148.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!-- 设置图片的URL -->
+            <Image url="@image/image/image/LoginBottom.png" />
+         </image>
+      </ImageView>
+      <!-- 添加一个复选框，用于同意服务条款 -->
+      <CheckBox layoutX="148.0" layoutY="693.0" mnemonicParsing="false" text="同意">
+         <effect>
+            <!-- 设置颜色调整效果 -->
+            <ColorAdjust contrast="0.24" />
+         </effect>
+      </CheckBox>
+      <!-- 添加一个标签，显示服务条款的链接 -->
+      <Label layoutX="216.0" layoutY="694.0" text="《服务条款》" textFill="#7592f2" />
+      <!-- 添加一个标签，显示隐私政策的链接 -->
+      <Label layoutX="315.0" layoutY="694.0" prefHeight="20.0" prefWidth="100.0" text="《隐私政策》" textFill="#4e75e8" />
+      <!-- 添加一个标签，显示儿童隐私政策的链接 -->
+      <Label layoutX="415.0" layoutY="694.0" text="《儿童隐私政策》" textFill="#4e75e8" />
+      <!-- 添加一个图片视图，显示竖线图标 -->
+      <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="383.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+   </children>
+</AnchorPane>

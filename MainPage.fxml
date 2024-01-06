@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="905.0" prefWidth="1653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cx.MainPage">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="1676.0" style="-fx-background-color: red;">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="161.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/img_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="295.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/BackIcon_12.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="374.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/PointToRight_12.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="436.0" layoutY="17.0" prefHeight="30.0" prefWidth="226.0" style="-fx-background-color: rgba(255,100,0,255);-fx-text-fill: white;" text="        大家都在搜 薛之谦" />
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="442.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/SearchIcon-16.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="697.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/实物-麦克风.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image" fitHeight="32.0" fitWidth="32.0" layoutX="983.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/DefaultSinger.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="comboBox" layoutX="1031.0" layoutY="12.0" prefHeight="39.0" prefWidth="99.0" style="-fx-background-color: red;-fx-text-fill: white" value="未登录" />
+            <ImageView fitHeight="32.0" fitWidth="89.0" layoutX="1134.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="1252.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/皮肤.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="1289.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/设置.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="1334.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/私信.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="1371.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/竖线.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="1415.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/窗口.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="1487.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/横线.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="1547.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/缩放.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="1612.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/关闭.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="63.0" prefHeight="782.0" prefWidth="254.0" style="-fx-border-color: D9D7D7FF;">
+         <children>
+            <Label layoutX="3.0" layoutY="25.0" prefHeight="39.0" prefWidth="247.0" style="-fx-background-color: F1F0F0FF;" text="   发现音乐">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="85.0" prefHeight="20.0" prefWidth="75.0" text="播客">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="127.0" text="视频">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="169.0" text="关注">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="209.0" text="直播">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="252.0" text="私人漫游">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="299.0" text="我的音乐" textFill="#bcb5b5" />
+            <Label layoutX="56.0" layoutY="344.0" text="我喜欢的音乐">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="391.0" text="本地与下载">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="445.0" text="最近播放">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="18.0" layoutY="509.0" opacity="0.64" prefHeight="30.0" prefWidth="136.0" promptText="创建的歌单" style="-fx-background-color: white;" visibleRowCount="20" />
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="26.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/FavorTabIcon_20.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="203.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/FavorTabIcon_20.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="23.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/下载.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="23.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/RecentPlayTabIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="40.0" layoutX="201.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/加号1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="251.0" layoutY="63.0" prefHeight="782.0" prefWidth="1425.0" style="-fx-background-color: white;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="942.0" prefWidth="1405.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="46.0" layoutY="41.0" text="个性推荐" underline="true">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="195.0" layoutY="47.0" text="专属定制" textFill="#544f4f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="319.0" layoutY="47.0" text="歌单" textFill="#544f4f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="395.0" layoutY="47.0" text="排行榜" textFill="#544f4f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="494.0" layoutY="47.0" text="歌手" textFill="#544f4f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="558.0" layoutY="47.0" text="最新音乐" textFill="#544f4f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="139.0" layoutY="360.0" text="推荐歌单">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="167.0" fitWidth="360.0" layoutX="139.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/img_3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="167.0" fitWidth="360.0" layoutX="898.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/img_5.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="218.0" fitWidth="512.0" layoutX="466.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/img_4.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="#d4d8da" layoutX="726.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="581.0" layoutY="338.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="745.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="762.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="783.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="652.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="667.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#d4d8da" layoutX="686.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <Circle fill="#2f3132" layoutX="709.0" layoutY="335.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: f0f3f5;" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="235.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/image/image/PointToRight_12.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="135.0" layoutY="429.0" prefHeight="242.0" prefWidth="1157.0" spacing="20.0">
+                     <children>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/2.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="14.0" layoutY="205.0" text="每日歌曲推荐" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="aa" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/QQ截图20231227140655.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="149.0" layoutY="17.0" text="5100万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="cc" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/QQ截图20231227140816.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="200万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="Aa" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/12.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="100万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="bb" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/13.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="300万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="135.0" layoutY="700.0" prefHeight="242.0" prefWidth="1157.0" spacing="20.0">
+                     <children>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="ee" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/14.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="600万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="ff" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/15.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="540万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="hh" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/16.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="320万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="jj" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/17.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="120万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="224.0" prefWidth="214.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="205.0" text="kk" />
+                              <ImageView fitHeight="241.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/18.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="131.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/24gl-play.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="156.0" layoutY="17.0" text="339万" textFill="#f8f3f3" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <AnchorPane layoutX="-4.0" layoutY="842.0" prefHeight="63.0" prefWidth="1676.0" style="-fx-border-color: D9D7D7FF;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="683.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image/image/NeteaseSequenceLoopMode.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="771.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/上一曲1-01.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="871.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#handlePlay">
+               <image>
+                  <Image url="@image/播放.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="962.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/下一曲1-01.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="1042.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/歌词未点击.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
